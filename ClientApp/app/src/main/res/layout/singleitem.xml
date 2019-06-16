@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="22dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:id="@+id/imagee"
+                android:background="@drawable/momo"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food Item"
+                android:layout_toRightOf="@+id/imagee"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:id="@+id/foodName"
+                android:layout_margin="7dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imagee"
+                android:layout_below="@+id/foodName"
+                android:textColor="#2e2e2e"
+                android:layout_marginLeft="7dp"
+                android:text="Description"
+                android:id="@+id/foodDesc"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs."
+                android:layout_toRightOf="@+id/imagee"
+                android:layout_below="@+id/foodDesc"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:id="@+id/rs"
+                android:layout_margin="7dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="**"
+                android:layout_toRightOf="@+id/rs"
+                android:layout_below="@+id/foodDesc"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:id="@+id/foodPrice"
+                android:layout_margin="7dp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
